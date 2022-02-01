@@ -9,7 +9,6 @@ export const fetchStats = () => async (dispatch) => {
   const stats = [];
   const date = new Date();
   const recentDate = date.toISOString().split('T')[0];
-  console.log(recentDate);
   const countriesObj = data.dates[recentDate].countries;
   const countries = Object.values(countriesObj);
   countries.forEach((country) => {

@@ -9,7 +9,6 @@ const Home = () => {
       <ul>
         {stats.map((stat) => (
           <li key={stat.id}>
-            <p>{stat.date}</p>
             <p>{stat.id}</p>
           </li>
         ))}
