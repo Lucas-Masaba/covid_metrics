@@ -1,0 +1,9 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.year_header {
+  display: flex;
+  align-items: baseline;
+}

@@ -1,29 +1,22 @@
-// import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { React, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { React } from 'react';
+// import { useDispatch } from 'react-redux';
 import Home from './pages/home';
-import { fetchStats } from './redux/countries/countries';
+// import { fetchStats } from './redux/countries/countries';
 import Details from './pages/details';
-import './App.css';
+import Header from './components/header';
 
-const App = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchStats());
-  }, []);
-
-  return (
-    <div className="App">
-      {/* <Router>
+const App = () => (
+  <div className="App">
+    <Router>
+      <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/missions" element={<Details />} />
+        <Route path="/details/:countryId" element={<Details />} />
       </Routes>
-    </Router> */}
-      <Home />
-      <Details />
-    </div>
-  );
-};
+    </Router>
+    {/* <Home />
+      <Details /> */}
+  </div>
+);
 export default App;

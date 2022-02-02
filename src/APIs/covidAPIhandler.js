@@ -8,4 +8,10 @@ export const fetchCountriesFromAPI = async () => {
   return getResponse;
 };
 
-export default fetchCountriesFromAPI;
+export const fetchACountryFromAPI = async (id) => {
+  const response = await fetch(`${baseURL}/country/${id}`);
+  const getResponse = await response.json();
+  return getResponse;
+};
+
+export default { fetchCountriesFromAPI, fetchACountryFromAPI };
