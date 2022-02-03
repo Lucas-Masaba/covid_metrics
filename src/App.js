@@ -5,9 +5,10 @@ import Home from './pages/home';
 // import { fetchStats } from './redux/countries/countries';
 import Details from './pages/details';
 import Header from './components/header';
+import './App.css';
 
 const App = () => (
-  <div className="App">
+  <div className="App container-fluid">
     <Router>
       <Header />
       <Routes>
@@ -15,8 +16,6 @@ const App = () => (
         <Route path="/details/:countryId" element={<Details />} />
       </Routes>
     </Router>
-    {/* <Home />
-      <Details /> */}
   </div>
 );
 export default App;

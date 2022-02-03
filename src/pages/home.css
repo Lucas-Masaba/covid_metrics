@@ -1,9 +1,81 @@
-.country_li {
-  float: left;
-  width: 50%;
+.total {
+  background: #fb5092;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.earth {
+  font-size: 1000%;
+  margin-right: 2%;
+}
+
+.world_sp {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.total_p {
+  font-weight: 500;
+}
+
+.stats_by {
+  background: #df4783;
+  margin-bottom: 0%;
+  font-weight: bold;
+}
+
+.country_li {
+  float: left; 
+  width: 50%;
+  padding: 0.9%;
+  /* background: #db4681; */
+}
+
+.location_icon {
+  font-size: 300%;
+}
+
+/* .country_li :nth-child(odd) {
+  background-color: #cf4278;
+} */
+
+.one {
+  background: #be2e68;
+}
+
+.two {
+  background-color: #cf4278;
+}
+
 .country_ul {
-  list-style-type: disc;
   list-style-type: none;
   padding-left: 0%;
+  /* -moz-column-count: 2;
+
+  -webkit-column-count: 2;
+
+  column-count: 2; */
+
+}
+
+.country_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2%;
+}
+
+.today {
+  text-align: right;
+}
+
+.right_arrow {
+  font-size: 120%;
+  margin-bottom: 250%;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 130%;
 }

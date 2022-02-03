@@ -13,16 +13,17 @@ const Header = () => {
       <div className="header_container">
         <div className="year_header">
           <Link to="/">
-            <span style={{ color: 'black' }} className="back_arrow"><BackArrow /></span>
-            <span>{currentYear}</span>
+            <span style={{ color: 'white', fontSize: '110%', fontWeight: 'bold' }} className="back_arrow"><BackArrow /></span>
+            <span className="current_year">{currentYear}</span>
           </Link>
         </div>
         <div>
-          <span>cases</span>
+          <span style={{ fontSize: '110%', fontWeight: '500' }}>cases</span>
         </div>
         <div>
-          <span><Mic /></span>
-          <span><Gear /></span>
+          <span style={{ fontSize: '120%', fontWeight: '500' }}><Mic /></span>
+          {' '}
+          <span style={{ fontSize: '120%', fontWeight: '500' }}><Gear /></span>
         </div>
       </div>
     </header>
