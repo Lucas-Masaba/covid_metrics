@@ -19,7 +19,6 @@ const Home = () => {
   // console.log(`Damn state ${state}`);
   const stats = useSelector((state) => state.countries);
   const total = useSelector((stateThree) => stateThree.global[6]);
-  console.log(`Damn stats ${stats.name}`);
 
   return (
     <div>
