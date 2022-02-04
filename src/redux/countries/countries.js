@@ -1,9 +1,6 @@
 import { fetchCountriesFromAPI } from '../../APIs/covidAPIhandler';
 
-// constants
 const FETCH_STATS = 'statsStore/stats/FETCH_STATS';
-// const GLOBAL = 'statsStore/stats/GLOBAL';
-// actions
 export const fetchStats = () => async (dispatch) => {
   const data = await fetchCountriesFromAPI();
   const stats = [];
@@ -30,26 +27,12 @@ export const fetchStats = () => async (dispatch) => {
   });
 };
 
-// export const globalStats = () => async (dispatch) => {
-//   const data = await fetchCountriesFromAPI();
-//   // const { total } = data;
-//   const totalArray = Object.values(data);
-//   // const array = Array.from(data);
-//   dispatch({
-//     type: GLOBAL,
-//     payload: totalArray,
-//   });
-// };
-
-// reducers
 const initialState = [];
 
 const statsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_STATS:
       return action.payload;
-    // case GLOBAL:
-    //   return action.payload;
     default:
       return state;
   }

@@ -15,8 +15,7 @@ const Home = () => {
     dispatch(fetchStats());
     dispatch(globalStats());
   }, []);
-  // const state = useSelector((state) => state)
-  // console.log(`Damn state ${state}`);
+
   const stats = useSelector((state) => state.countries);
   const total = useSelector((stateThree) => stateThree.global[6]);
 

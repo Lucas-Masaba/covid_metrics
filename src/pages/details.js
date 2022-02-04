@@ -15,8 +15,6 @@ const Details = () => {
     dispatch(fetchAStat(countryId));
   }, []);
 
-  // console.log(`Rough stats ${stats}`);
-
   return (
     <div>
       <div className="total">
