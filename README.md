@@ -22,7 +22,7 @@ Additional description about the project and its features.
 
 ## A Video With Me In It
 
-[Here]([Live Demo Link](https://covid-metrics-lucas-masaba.netlify.app/)) is a video of me explaining how this aplication works.
+[Here](https://covid-metrics-lucas-masaba.netlify.app/) is a video of me explaining how this aplication works.
 
 ## Getting Started
 
