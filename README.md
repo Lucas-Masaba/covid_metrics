@@ -18,8 +18,11 @@ Additional description about the project and its features.
 - Eslint & StyleLint
 ## Live Demo
 
-[Live Demo Link](https://space-traveler-zaman-lucas.netlify.app/)
+[Live Demo Link](https://covid-metrics-lucas-masaba.netlify.app/)
 
+## A Video With Me In It
+
+[Here]([Live Demo Link](https://covid-metrics-lucas-masaba.netlify.app/)) is a video of me explaining how this aplication works.
 
 ## Getting Started
 
@@ -35,18 +38,7 @@ To get a local copy up and running follow these simple example steps.
 - Enter `npm install` and then `npm run build` in the terminal.
 
 ### Usage
-- Go to the 'Rockets' page to reserve rockets.
-- Go to the 'Missions' page to join missions.
-- Go to the profile page to see the chosen rockets and missions.
-
-
-## Authors
-
-👤 **Humaira Zaman**
-
-- GitHub: [@qwibbler](https://github.com/qwibbler)
-- Twitter: [@hmemaz](https://twitter.com/hmemaz)
-- LinkedIn: [Humaira Zaman](https://www.linkedin.com/in/humaira-zaman/)
+- Click on the different countries to get their statistics
 
 👤 **Khusiima Luke Masaba**
 
@@ -66,7 +58,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- <a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
+- Design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+- Virus Image by rawpixel.com vexels.com
+- Gif made by https://www.freeconvert.com/crop-video
 
 ## 📝 License
 
