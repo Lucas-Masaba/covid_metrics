@@ -20,6 +20,7 @@ export const fetchAStat = (countryId) => async (dispatch) => {
       today_deaths: country.today_deaths,
       today_recovered: country.today_recovered,
       date: country.date,
+      source: country.source,
     };
     stats.push(stat);
   });

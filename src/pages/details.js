@@ -8,14 +8,14 @@ import './home.css';
 import './details.css';
 
 const Details = () => {
-  const { countryId } = useParams();
   const dispatch = useDispatch();
-
+  const { countryId, index } = useParams();
+  const stats = useSelector((state) => state.countries[index]);
   useEffect(() => {
     dispatch(fetchAStat(countryId));
   }, []);
 
-  const stats = useSelector((stateTwo) => stateTwo.country[0]);
+  // console.log(`Rough stats ${stats}`);
 
   return (
     <div>
@@ -56,6 +56,16 @@ const Details = () => {
           </div>
           <div className="data_container">
             <span className="confirmed_data">{`${stats.today_deaths} cases`}</span>
+            {' '}
+            <span><RightArrow /></span>
+          </div>
+        </li>
+        <li className="additional_li two">
+          <div>
+            <span className="data">Source</span>
+          </div>
+          <div className="data_container">
+            <span className="confirmed_data">{stats.source}</span>
             {' '}
             <span><RightArrow /></span>
           </div>

@@ -15,9 +15,11 @@ const Home = () => {
     dispatch(fetchStats());
     dispatch(globalStats());
   }, []);
-
+  // const state = useSelector((state) => state)
+  // console.log(`Damn state ${state}`);
   const stats = useSelector((state) => state.countries);
   const total = useSelector((stateThree) => stateThree.global[6]);
+  console.log(`Damn stats ${stats.name}`);
 
   return (
     <div>
@@ -34,7 +36,7 @@ const Home = () => {
       <p className="stats_by">STATS BY COUNTRY</p>
       <ul className="country_ul">
         {stats.map((stat, index) => (
-          <Link activeclassname="active link" key={stat.id} to={`/details/${stat.id}`}>
+          <Link activeclassname="active link" key={stat.id} to={`/details/${stat.id}/${index}`}>
             <li key={stat.id} className={(index + 1) % 4 >= 2 ? 'country_li one' : 'country_li two'}>
               <div>
                 <span className="location_icon"><Location /></span>

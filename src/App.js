@@ -13,7 +13,7 @@ const App = () => (
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/details/:countryId" element={<Details />} />
+        <Route path="/details/:countryId/:index" element={<Details />} />
       </Routes>
     </Router>
   </div>

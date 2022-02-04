@@ -29,6 +29,7 @@
   float: left; 
   width: 50%;
   padding: 0.9%;
+  height: 32vh;
   /* background: #db4681; */
 }
 
@@ -72,7 +73,8 @@
 
 .right_arrow {
   font-size: 120%;
-  margin-bottom: 250%;
+  margin-bottom: 500%;
+  margin-top: -300%;
 }
 
 .name {
