@@ -26,10 +26,11 @@
 }
 
 .country_li {
-  float: left; 
+  float: left;
   width: 50%;
   padding: 0.9%;
   height: 32vh;
+
   /* background: #db4681; */
 }
 
@@ -52,12 +53,12 @@
 .country_ul {
   list-style-type: none;
   padding-left: 0%;
+
   /* -moz-column-count: 2;
 
   -webkit-column-count: 2;
 
   column-count: 2; */
-
 }
 
 .country_container {
