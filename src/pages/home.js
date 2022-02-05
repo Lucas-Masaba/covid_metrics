@@ -5,7 +5,7 @@ import './home.css';
 import { BsArrowRightCircle as RightArrow } from 'react-icons/bs';
 import { GiEarthAfricaEurope as Earth } from 'react-icons/gi';
 import { GoLocation as Location } from 'react-icons/go';
-import { fetchStats } from '../redux/countries/countries';
+import { fetchStats, filterCountries } from '../redux/countries/countries';
 import { globalStats } from '../redux/global/global';
 
 const Home = () => {
@@ -18,6 +18,10 @@ const Home = () => {
 
   const stats = useSelector((state) => state.countries);
   const total = useSelector((stateThree) => stateThree.global[6]);
+
+  const searchCountries = (e) => {
+    dispatch(filterCountries(e.target.value));
+  };
 
   return (
     <div>
@@ -32,6 +36,7 @@ const Home = () => {
       </div>
 
       <p className="stats_by">STATS BY COUNTRY</p>
+      <input onChange={searchCountries} className="search_bar" type="search" placeholder="Search..." />
       <ul className="country_ul">
         {stats.map((stat, index) => (
           <Link activeclassname="active link" key={stat.id} to={`/details/${stat.id}/${index}`}>

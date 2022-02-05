@@ -1,5 +1,7 @@
-const date = new Date();
-const recentDate = date.toISOString().split('T')[0];
+const today = new Date();
+const yesterday = new Date();
+yesterday.setDate(today.getDate() - 1);
+const recentDate = yesterday.toISOString().split('T')[0];
 const baseURL = `https://api.covid19tracking.narrativa.com/api/${recentDate}`;
 
 export const fetchCountriesFromAPI = async () => {

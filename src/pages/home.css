@@ -70,3 +70,8 @@
   font-weight: bold;
   font-size: 130%;
 }
+
+.search_bar {
+  width: 100%;
+  outline: none;
+}

@@ -8,8 +8,10 @@ const FETCH_A_STAT = 'statsStore/stats/FETCH_A_STAT';
 export const fetchAStat = (countryId) => async (dispatch) => {
   const data = await fetchACountryFromAPI(countryId);
   const stats = [];
-  const date = new Date();
-  const recentDate = date.toISOString().split('T')[0];
+  const today = new Date();
+  const yesterday = new Date();
+  yesterday.setDate(today.getDate() - 1);
+  const recentDate = yesterday.toISOString().split('T')[0];
   const countriesObj = data.dates[recentDate].countries;
   const countries = Object.values(countriesObj);
   countries.forEach((country) => {
