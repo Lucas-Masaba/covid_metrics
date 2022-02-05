@@ -12,7 +12,6 @@ export const fetchStats = () => async (dispatch) => {
   const yesterday = new Date();
   yesterday.setDate(today.getDate() - 1);
   const recentDate = yesterday.toISOString().split('T')[0];
-  console.log(recentDate);
   const countriesObj = data.dates[recentDate].countries;
   const countries = Object.values(countriesObj);
   countries.forEach((country) => {

@@ -22,7 +22,7 @@ Additional description about the project and its features.
 
 ## A Video With Me In It
 
-[Here](https://www.loom.com/share/9daba2f556bf475b9cf679ff7c856937) is a video of me explaining how this aplication works.
+[Here](https://www.loom.com/share/4e08303075c6495faebe7a0c7c0eae4f) is a video of me explaining how this aplication works.
 
 ## Getting Started
 
