@@ -1,0 +1,17 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  background: #ec4c8b;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.year_header {
+  display: flex;
+  align-items: baseline;
+}
+
+.current_year {
+  font-weight: bold;
+  font-size: 105%;
+}

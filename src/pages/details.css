@@ -1,0 +1,22 @@
+.additional_ul {
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.additional_li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.data {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.confirmed_data {
+  font-weight: 500;
+}
