@@ -2,7 +2,7 @@
 
 # Covid Metrics
 
-> A hub for space travelers who want to reserve available rockets or join active missions.
+> With this, one can keep track of covid cases, recoveries and deaths around different countries in the world.
 
 ![screenshot](./public/screenshot.png)
 
